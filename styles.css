@@ -6,6 +6,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 1rem; /* Add padding to ensure content does not touch the edges */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .container {
@@ -17,6 +19,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 h1, h2 {
@@ -141,5 +144,19 @@ input.add-player-input {
 
   input, select, button {
     font-size: 0.875rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  button.add-player {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  input.add-player-input {
+    width: 100%;
+    margin-top: 0.5rem;
   }
 }
